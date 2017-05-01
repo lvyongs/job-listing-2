@@ -7,7 +7,11 @@
 <table class="table table-bordered"
 <% @jobs.each do |job| %>
 <tr>
+
+
   <td>
+    <%= render_job_status(job) %>
+    
     <%= link_to(job.title, admin_jobs_path(job)) %>
   </td>
   <td>
