@@ -8,6 +8,8 @@ namespace :admin do
       post :hide
 
     end
+
+    resources :resumes
   end
 end
 
