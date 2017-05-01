@@ -6,11 +6,13 @@ namespace :admin do
     member do
       post :publish
       post :hide
-      
+
     end
   end
 end
 
-resources :jobs
+resources :jobs do
+  resources :resumes
+end
 root 'jobs#index'
 end
